@@ -2,10 +2,10 @@ defmodule ElixirProjectWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ElixirProjectWeb.RoomChannel
+  channel("room:*", ElixirProjectWeb.RoomChannel)
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  transport(:websocket, Phoenix.Transports.WebSocket)
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
